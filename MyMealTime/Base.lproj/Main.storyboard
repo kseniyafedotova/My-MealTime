@@ -16,16 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MealTime" translatesAutoresizingMaskIntoConstraints="NO" id="w1C-JC-XXQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mlTm" translatesAutoresizingMaskIntoConstraints="NO" id="w1C-JC-XXQ">
                                 <rect key="frame" x="0.0" y="88" width="414" height="154"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="w1C-JC-XXQ" secondAttribute="height" multiplier="207:77" id="1s5-3b-QCN"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="a7T-aG-hCo">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="a7T-aG-hCo">
                                 <rect key="frame" x="0.0" y="240" width="414" height="656"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27056664817423809" green="0.84546158420346851" blue="0.87854502188790706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="separatorColor" red="0.29050317590000002" green="0.90775887190000004" blue="0.94328004119999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Jzq-Ao-8Rk"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="sUA-GC-vau"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -39,7 +44,7 @@
                     <navigationItem key="navigationItem" title="My MealTime" id="CtZ-zD-cwn">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="Jda-S5-BDG">
                             <connections>
-                                <action selector="addButton:" destination="BYZ-38-t0r" id="JQ4-OV-I7p"/>
+                                <action selector="addButton:" destination="BYZ-38-t0r" id="2Cb-IB-5It"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -71,7 +76,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="MealTime" width="658" height="263"/>
+        <image name="mlTm" width="2880" height="1150"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
